@@ -1,0 +1,674 @@
+/* GLOBAL */
+* {
+    padding: 0;
+    margin: 0;
+}
+/*SQUELETTE*/
+body {
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+.page {
+    margin-top: 15vh;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+.categorie {
+    padding-top: 15vh;
+}
+.bloc {
+    height: 75vh;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-bottom: 10vh;
+    background-repeat: no-repeat;
+}
+.blocSansMarge {
+    height: 75vh;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.blocAccueil {
+    margin-bottom: 10vh;
+    height: 75vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+.blocContact {
+    height: 75vh;
+    background-color: #f2f2f2;
+}
+.contentContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contentWithoutTitle {
+    text-align: center;    
+    padding-right: 10%;
+}
+.contentWithTitle {
+    text-align: center;    
+    padding-right: 10%;
+    margin-top: -10vh;
+}
+.textContainer {
+    background-color: rgba(38, 32, 33, 0.8);
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 400px;
+}
+.textContainer a {
+    text-align: center;
+}
+.avisGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 65vh;
+}
+.miniBloc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.logoPied {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.blackLogo {
+    height: 100%;
+    min-width: 75px;
+    background-image: url(../img/LOGO.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+/*TEXT*/
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: rgba(38, 32, 33, 0.8);
+}
+h1 {
+    font-family: 'Montserrat', sans-serif, medium;
+    color: #f2f2f2;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif, medium;
+    color: #f2f2f2;
+    font-size: 2em;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif, medium;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2vh;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif, medium;
+    font-size: 1em;
+    color: #f2f2f2;
+    text-align: center;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.centerTxt {
+    text-align: center;
+}
+footer p {
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#presentation a {
+    font-family: 'Montserrat', sans-serif, medium;
+    color: #E17A04;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.italique{
+    font-style: italic;
+}
+.orangeTxt {
+    color: #E17A04;
+}
+/***********************************HEADER**********************************/
+header {
+    display: grid;
+    grid-template-columns: repeat(1fr, 12fr);
+    grid-template-areas:    "logo logo hC hC hC hC hC hC hC hC hC hC hC"
+                            "logo logo nav nav nav nav nav nav nav nav nav nav nav";
+    height: 15vh;
+    width: 100%;
+    background-color: #262021;
+    position: fixed;
+    top: 0;
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    max-width: 75px;
+    max-height: 75px;
+}
+.headerContact {
+    grid-area: hC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.headerContact a {
+    color: #E17A04;
+}
+
+/*MENU*/
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+nav li {
+    list-style: none;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+nav a {
+    font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+    font-size: 1.2em;
+    text-decoration: none;
+
+}
+nav a:hover {
+    color: #E17A04;
+}
+nav a:active {
+    color: #E17A04;
+}
+
+/***********************************ACCUEIL**********************************/
+
+#accueil {
+    background-image: url(../img/desktop_banner.jpg);
+}
+.titreAccueil {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titreAccueil h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logoAccueil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titreAccueil p {
+    text-align: center;
+    margin-top: 20px;
+}
+/***********************************PAS MA PARTIE**********************************/
+/***********************************PRESENTATION**********************************/
+#agrement {
+    background-image: url(../img/desktop_justice.jpg);
+}
+#disponibilite {
+    background-image: url(../img/desktop_dispo.jpg);
+}
+
+/***********************************DOMAINE**********************************/
+#adultere {
+    background-image: url(../img/desktop_adultere.jpg);
+}
+#recherche {
+    background-image: url(../img/desktop_recherche.jpg);
+    background-position: bottom left;
+}
+#vol {
+    background-image: url(../img/desktop_vol.jpg);
+}
+
+/***********************************QUI SUIS JE**********************************/
+#davidLogan {
+    background-image: url(../img/desktop_david_logan2.jpg);
+    background-position: center;
+}
+/***********************************AVIS CLIENTS**********************************/
+#avis .titre {
+    background-color: #262021
+}
+.avisGrid .textContainer {
+    height: 350px;
+    background-color: #262021
+}
+.custommerName {
+    text-align: right;
+    margin-right: 3px;
+    font-size: 1em;
+    font-style: italic;
+}
+.avis {
+    text-align: center;
+    font-size: 1.5em;
+}
+#chiffres .orangeTxt {
+    font-size: 1.8em;
+}
+#chiffres p {
+    text-align: center;
+    font-size: 1.5em;
+}
+/***********************************CONTACT**********************************/
+#contact .titre {
+    background-color: #262021
+}
+.formBox {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 50%;
+    height: 80%;
+    background-color: #262021;
+    border-radius: 25px;    
+}
+.formFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    flex-direction: column;
+}
+.formContainer {
+    height: 35vh;
+    width: 70%;
+    display: grid;
+    grid-template-areas:    "name mail"
+                            "city city"
+                            "message message"
+                            "message message"
+                            "message message";
+}                           
+.formContainer input {
+    border-radius: 5px;
+    border-color: #BCE0FD;
+    height: 3vh;
+    width: 100%;
+}
+.formName {
+    grid-area: name;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-right: 2.5px;
+}
+.formMail {
+    grid-area: mail;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 2.5px;
+}
+.formCity {
+    grid-area: city;
+    display: flex;
+    align-items: center;
+}
+.formMessage {
+    grid-area: message;
+    display: flex;
+    align-items: center;
+}
+input {
+    font-family:  'Raleway', sans-serif;
+    color: #262021;
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: 1em;
+    border: none;
+}
+textarea {
+    font-family:  'Raleway', sans-serif;
+    color: #262021;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 1em;
+    border-radius: 7.5px;
+    width: 100%;
+}
+.subButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subButton input{
+    padding: 10px;
+    border-radius: 5px;
+    font-family:  'Raleway', sans-serif;
+    color: #F2F2F2;
+    background-color: #594F4F;
+    border: none;
+}
+.subButton input:hover {
+    color: #E17A04;
+}
+
+
+/***********************************FOOTER**********************************/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #262021;
+    height: 10vh;
+}
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.footerBox {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #594F4F;
+
+}
+.footerSocial {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 100%;
+}
+.socialLogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.socialCont {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright p {
+    font-size: 0.8em;
+}
+.credits {
+    font-size: 0.8em;
+}
+.logoFooter {
+    width: 75px;
+    height: 100%;
+    background-image: url(../img/LOGOBLANC.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/********************************RESPONSIVE***************************/
+@media screen and (max-width: 1000px){
+    nav a {
+        font-size: 0.8em;
+    }
+    .headerContact p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 840px){
+    .textContainer {
+        width: 300px;
+    }
+    .avis {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 700px) {
+    /*Global*/
+    h1 {
+        font-family: 'Montserrat', sans-serif, medium;
+        color: #f2f2f2;
+        font-size: 1.5em;
+    }
+    h2 {
+        font-family: 'Montserrat', sans-serif, medium;
+        color: #f2f2f2;
+        font-size: 1.2em;
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif, medium;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 2vh;
+    }
+    /*SQUELETTE*/
+    .contentWithoutTitle {
+        text-align: center;    
+        padding-right: 0;
+    }
+    .contentWithTitle {
+        padding-right: 0;
+        margin-top: -10vh;
+    }
+    .contentContainer {
+        justify-content: center;
+    }
+    /*HEADER*/
+    header {
+        display: grid;
+        grid-template-columns: repeat(1fr, 12fr);
+        grid-template-areas:    "logo hC hC hC hC hC hC hC hC hC hC hC hC"
+                                "nav nav nav nav nav nav nav nav nav nav nav nav nav";
+    }
+    .logo img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .headerContact {
+        padding-right: 2px;
+    }
+    .headerContact p {
+        font-size: 0.7em;
+    }
+    /*Nav*/
+    nav a {
+        font-size: 0.55em;
+    }
+    nav ul {
+        padding-right: 0;
+        justify-content: space-evenly;
+    }
+    nav li {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /*Background images*/
+    /*Accueil*/
+    #accueil {
+        background-position-x: -900px;
+    }
+    /*Presentation*/
+
+    #agrement {
+        background-position-x: -300px;
+    }
+    #disponibilite {
+        background-position-x: -400px;
+    }
+    
+
+    /*prestations*/
+    #recherche {
+        background-position: bottom left;
+        background-position-x: -280px;
+    }
+    #vol {
+        background-position-x: -80px;
+    }
+    #adultere {
+        background-position-x: -150px;
+    }
+    
+
+    /*Qui suisje*/
+    #davidLogan {
+
+        background-position: bottom left;
+        background-position-x: -650px;
+    }
+
+
+    /*Accueil*/
+    .video {
+        display: none;
+    }
+    .logoAccueil img{
+        width: 30%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    /*Avis*/
+    .avisGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .avisGrid .textContainer {
+        width: 80%;
+        height: 80%;
+    }
+    #avis h3 {
+        margin-top: 0.5vh;
+    }
+    .avis {
+        font-size: 1em;
+    }
+    .custommerName {
+        font-size: 0.8em;
+    }
+    .temoignageGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .temoignageContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .chiffresGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 80%;
+ 
+    }
+    .chiffresFlex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #chiffres p {
+        font-size: 1em;
+    }
+    /*Contact*/
+    form {
+        width: 80%;
+    }
+    .formContainer {
+        display: grid;
+        grid-template-areas:    "name name"
+                                "mail mail"
+                                "city city"
+                                "message message"
+                                "message message"
+                                "message message";
+    } 
+    .formName {
+        padding-right: 0;
+    }
+    .formMail {
+        padding-left: 0;
+    }
+    input {
+        font-size: 0.8em;
+    }
+    textarea {
+        font-size: 0.8em;
+    }
+    /*Footer*/
+    .footerBox {
+        width: 150px;
+        border-radius: 0;
+        height: 100%;
+        background-color: #262021;
+    }
+    .credits {
+        font-size: 0.5em;
+    }
+    .socialCont {
+        height: 12px;
+    }
+    .copyright p {
+        font-size: 0.5em;
+    }
+    h4 {
+        padding-top: 0;
+    }
+    .footerSocial {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
