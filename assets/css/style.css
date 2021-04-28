@@ -161,15 +161,15 @@ footer p {
 }
 /***********************************HEADER**********************************/
 header {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(1fr, 12fr);
     grid-template-areas:    "logo logo hC hC hC hC hC hC hC hC hC hC hC"
                             "logo logo nav nav nav nav nav nav nav nav nav nav nav";
     height: 15vh;
-    width: 100%;
+    width: 100%;*/
     background-color: #262021;
-    position: fixed;
-    top: 0;
+   /* position: fixed;
+    top: 0;*/
 }
 .logo {
     grid-area: logo;
@@ -191,7 +191,7 @@ header {
 }
 .headerContact a {
     color: #E17A04;
-}
+}*/
 
 /*MENU*/
 nav{
