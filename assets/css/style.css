@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*navbar*/
 
 .dropdown-menu, .dropdown-item, .nav-link, .nav-item , #navBar{
@@ -257,4 +258,23 @@ p {
         padding-top: 20%;
         padding-bottom: 20%;
     }
+=======
+.container1 {
+width: 100%;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 30px;
+background-color: #262021;
+
+}
+
+.container {
+    background-color: #262021;
+    border-radius: 30px;
+}
+
+.btn {
+    background-color: #e17a04;
+>>>>>>> ray
 }

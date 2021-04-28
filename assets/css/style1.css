@@ -1,0 +1,125 @@
+/* début Navbar  */
+
+.dropdown-menu, .dropdown-item, .nav-link, .nav-item , #navBar{
+    background-color: #262021;
+}
+
+#navBar{
+    height: 8em;
+
+}
+
+#whiteLogo{
+    width: 5em;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #d7d3d3e6;
+}
+
+.navbar-light .navbar-nav .nav-link:hover ,#orangeColor, .dropdown-item:hover{
+    color: #E17A04;
+}
+
+
+/* fin de Navbar */
+
+
+.container1 {
+width: 100%;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 30px;
+background-color: #262021;
+}
+
+.container {
+    background-color: #262021;
+    border-radius: 15px;
+}
+
+.grid {
+    background-color: #262021;
+}
+
+.boxA {
+    background-color: #262026;
+}
+.boxB {
+    background-color: #594f4f;
+}
+.credits {
+    font-size: 14px;
+}
+.container-adultère {
+    margin-top: -30px;
+    color: white;
+}
+.logoPadding {
+    padding-top: 2em;
+}
+.containerCase {
+    background-color: #2620218c;
+    text-align: center;
+    padding: 15px;
+    margin-top: 90px;
+    margin-left: 900px;
+    border-radius: 20px;
+}
+.container1 .containerCase .col {
+    font-size: 25px;
+}
+#bandeau {
+    background-image: url(../img/desktop_cameraman.jpg);
+    color:#d7d3d3e6;
+    background-size: cover;
+    background-position:center ;
+    height: 600px;
+}
+#bandeauadultère {
+    background-image: url(../img/desktop_adultere.jpg);
+    color:#d7d3d3e6;
+    background-size: cover;
+    background-position:center ;
+    height: 600px;
+}
+.midTitle {
+    font-size: 30px;
+}
+
+.colon {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #26202694;
+}
+
+#adultère {
+    background-image: url(../img/desktop_adultere.jpg);
+    color:#d7d3d3e6;
+    background-size: cover;
+    background-position:center ;
+    height: 600px;
+    font-family:'Montserrat', sans-serif, medium;
+    
+}
+
+#bouton {
+    background-color: #E17A04;
+
+}
+/* footer */
+
+.contentContainer {
+    width: 100%;
+    background-color: #262021;
+    margin-top: 30px;
+    padding: 0px;
+}
+.socialLogo {
+    padding: 10px;
+}
+.copyright {
+    font-size: 14px;
+}
