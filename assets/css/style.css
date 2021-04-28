@@ -1,21 +1,24 @@
-/* GLOBAL */
-* {
-    padding: 0;
-    margin: 0;
+/*navbar*/
+
+.dropdown-menu, .dropdown-item, .nav-link, .nav-item , #navBar{
+    background-color: #312e2e;
 }
-/*SQUELETTE*/
-body {
-    height: 100vh;
-    background-color: #F2F2F2;
+#navBar{
+    height: 8em;
 }
-.page {
-    margin-top: 15vh;
-    height: 100vh;
-    background-color: #F2F2F2;
+#whiteLogo{
+    width: 5em;
 }
-.categorie {
-    padding-top: 15vh;
+.navbar-light .navbar-nav .nav-link{
+    color: #d7d3d3e6;
 }
+.dropdown-item , .nav-item{
+    color: white; 
+}
+.navbar-light .navbar-nav .nav-link:hover ,#orangeColor, .dropdown-item:hover{
+    color: #E17A04;
+} 
+
 .bloc {
     height: 75vh;
     width: 100%;
@@ -40,16 +43,14 @@ body {
     flex-direction: column;
     background-color: #f2f2f2;
 }
-.blocContact {
-    height: 75vh;
-    background-color: #f2f2f2;
-}
-.contentContainer {
+
+.contentContainer1 {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: rgba(black, green, blue, alpha);
 }
 .contentWithoutTitle {
     text-align: center;    
@@ -58,7 +59,7 @@ body {
 .contentWithTitle {
     text-align: center;    
     padding-right: 10%;
-    margin-top: -10vh;
+    margin-top: -20vh;
 }
 .textContainer {
     background-color: rgba(38, 32, 33, 0.8);
@@ -70,11 +71,7 @@ body {
 .textContainer a {
     text-align: center;
 }
-.avisGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 65vh;
-}
+
 .miniBloc {
     display: flex;
     align-items: center;
@@ -117,113 +114,32 @@ h1 {
 h2 {
     font-family: 'Montserrat', sans-serif, medium;
     color: #f2f2f2;
-    font-size: 2em;
+    font-size: 1.5em;
+    
 }
 h3 {
     font-family: 'Montserrat', sans-serif, medium;
     color: white;
+    text-shadow: 3px 3px 4px #000000, 0 0 16px rgb(191 191 191 / 66%);
     font-size: 1.5em;
     text-align: center;
     margin-top: 2vh;
 }
-h4 {
-    font-family: 'Montserrat', sans-serif, medium;
-    font-size: 1em;
-    color: #f2f2f2;
-    text-align: center;
-}
+
 p {
     font-family: 'Raleway', sans-serif;
     color: #F2F2F2;
     font-size: 1.2em;
     padding-top: 10px;
+    text-shadow: 3px 3px 4px #000000, 0 0 16px rgb(191 191 191 / 66%);
     padding-bottom: 10px;
 }
-.centerTxt {
-    text-align: center;
-}
-footer p {
-    text-align: center;
-    padding-bottom: 0;
-    padding-top: 0;
-}
+
 #presentation a {
     font-family: 'Montserrat', sans-serif, medium;
     color: #E17A04;
     text-decoration: none;
     font-size: 1.5em;
-}
-.italique{
-    font-style: italic;
-}
-.orangeTxt {
-    color: #E17A04;
-}
-/***********************************HEADER**********************************/
-header {
-    display: grid;
-    grid-template-columns: repeat(1fr, 12fr);
-    grid-template-areas:    "logo logo hC hC hC hC hC hC hC hC hC hC hC"
-                            "logo logo nav nav nav nav nav nav nav nav nav nav nav";
-    height: 15vh;
-    width: 100%;
-    background-color: #262021;
-    position: fixed;
-    top: 0;
-}
-.logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img {
-    max-width: 75px;
-    max-height: 75px;
-}
-.headerContact {
-    grid-area: hC;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-decoration: none;
-    padding-right: 20px;
-}
-.headerContact a {
-    color: #E17A04;
-}
-
-/*MENU*/
-nav{
-    grid-area: nav;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 5px;
-}
-nav li {
-    list-style: none;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-nav a {
-    font-family: 'Raleway', sans-serif;
-    color: #F2F2F2;
-    font-size: 1.2em;
-    text-decoration: none;
-
-}
-nav a:hover {
-    color: #E17A04;
-}
-nav a:active {
-    color: #E17A04;
 }
 
 /***********************************ACCUEIL**********************************/
@@ -250,215 +166,27 @@ nav a:active {
     text-align: center;
     margin-top: 20px;
 }
-/***********************************PAS MA PARTIE**********************************/
+/*footer*/
+
+.contentContainer {
+    background-color: #312e2e;
+    margin-top: 20px;
+}
+.socialLogo {
+    padding: 5px;
+    align-items: center;
+    justify-content:center;
+}
+.copyright {
+    font-size: 14px;
+}
+
 /***********************************PRESENTATION**********************************/
 #agrement {
     background-image: url(../img/desktop_justice.jpg);
 }
 #disponibilite {
     background-image: url(../img/desktop_dispo.jpg);
-}
-
-/***********************************DOMAINE**********************************/
-#adultere {
-    background-image: url(../img/desktop_adultere.jpg);
-}
-#recherche {
-    background-image: url(../img/desktop_recherche.jpg);
-    background-position: bottom left;
-}
-#vol {
-    background-image: url(../img/desktop_vol.jpg);
-}
-
-/***********************************QUI SUIS JE**********************************/
-#davidLogan {
-    background-image: url(../img/desktop_david_logan2.jpg);
-    background-position: center;
-}
-/***********************************AVIS CLIENTS**********************************/
-#avis .titre {
-    background-color: #262021
-}
-.avisGrid .textContainer {
-    height: 350px;
-    background-color: #262021
-}
-.custommerName {
-    text-align: right;
-    margin-right: 3px;
-    font-size: 1em;
-    font-style: italic;
-}
-.avis {
-    text-align: center;
-    font-size: 1.5em;
-}
-#chiffres .orangeTxt {
-    font-size: 1.8em;
-}
-#chiffres p {
-    text-align: center;
-    font-size: 1.5em;
-}
-/***********************************CONTACT**********************************/
-#contact .titre {
-    background-color: #262021
-}
-.formBox {
-    height: 65vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-form {
-    width: 50%;
-    height: 80%;
-    background-color: #262021;
-    border-radius: 25px;    
-}
-.formFlexContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90%;
-    flex-direction: column;
-}
-.formContainer {
-    height: 35vh;
-    width: 70%;
-    display: grid;
-    grid-template-areas:    "name mail"
-                            "city city"
-                            "message message"
-                            "message message"
-                            "message message";
-}                           
-.formContainer input {
-    border-radius: 5px;
-    border-color: #BCE0FD;
-    height: 3vh;
-    width: 100%;
-}
-.formName {
-    grid-area: name;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-right: 2.5px;
-}
-.formMail {
-    grid-area: mail;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 2.5px;
-}
-.formCity {
-    grid-area: city;
-    display: flex;
-    align-items: center;
-}
-.formMessage {
-    grid-area: message;
-    display: flex;
-    align-items: center;
-}
-input {
-    font-family:  'Raleway', sans-serif;
-    color: #262021;
-    font-weight: bold;
-    padding-left: 5px;
-    font-size: 1em;
-    border: none;
-}
-textarea {
-    font-family:  'Raleway', sans-serif;
-    color: #262021;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-top: 5px;
-    font-size: 1em;
-    border-radius: 7.5px;
-    width: 100%;
-}
-.subButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.subButton input{
-    padding: 10px;
-    border-radius: 5px;
-    font-family:  'Raleway', sans-serif;
-    color: #F2F2F2;
-    background-color: #594F4F;
-    border: none;
-}
-.subButton input:hover {
-    color: #E17A04;
-}
-
-
-/***********************************FOOTER**********************************/
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #262021;
-    height: 10vh;
-}
-.footerContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-.footerBox {
-    height: 100%;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #594F4F;
-
-}
-.footerSocial {
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    height: 100%;
-}
-.socialLogos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.socialCont {
-    width: 50%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.copyright p {
-    font-size: 0.8em;
-}
-.credits {
-    font-size: 0.8em;
-}
-.logoFooter {
-    width: 75px;
-    height: 100%;
-    background-image: url(../img/LOGOBLANC.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 /********************************RESPONSIVE***************************/
 @media screen and (max-width: 1000px){
@@ -497,10 +225,7 @@ footer {
         margin-top: 2vh;
     }
     /*SQUELETTE*/
-    .contentWithoutTitle {
-        text-align: center;    
-        padding-right: 0;
-    }
+    
     .contentWithTitle {
         padding-right: 0;
         margin-top: -10vh;
@@ -508,36 +233,6 @@ footer {
     .contentContainer {
         justify-content: center;
     }
-    /*HEADER*/
-    header {
-        display: grid;
-        grid-template-columns: repeat(1fr, 12fr);
-        grid-template-areas:    "logo hC hC hC hC hC hC hC hC hC hC hC hC"
-                                "nav nav nav nav nav nav nav nav nav nav nav nav nav";
-    }
-    .logo img {
-        max-width: 50px;
-        max-height: 50px;
-    }
-    .headerContact {
-        padding-right: 2px;
-    }
-    .headerContact p {
-        font-size: 0.7em;
-    }
-    /*Nav*/
-    nav a {
-        font-size: 0.55em;
-    }
-    nav ul {
-        padding-right: 0;
-        justify-content: space-evenly;
-    }
-    nav li {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /*Background images*/
     /*Accueil*/
     #accueil {
         background-position-x: -900px;
@@ -550,28 +245,6 @@ footer {
     #disponibilite {
         background-position-x: -400px;
     }
-    
-
-    /*prestations*/
-    #recherche {
-        background-position: bottom left;
-        background-position-x: -280px;
-    }
-    #vol {
-        background-position-x: -80px;
-    }
-    #adultere {
-        background-position-x: -150px;
-    }
-    
-
-    /*Qui suisje*/
-    #davidLogan {
-
-        background-position: bottom left;
-        background-position-x: -650px;
-    }
-
 
     /*Accueil*/
     .video {
@@ -582,93 +255,4 @@ footer {
         padding-top: 20%;
         padding-bottom: 20%;
     }
-    /*Avis*/
-    .avisGrid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .avisGrid .textContainer {
-        width: 80%;
-        height: 80%;
-    }
-    #avis h3 {
-        margin-top: 0.5vh;
-    }
-    .avis {
-        font-size: 1em;
-    }
-    .custommerName {
-        font-size: 0.8em;
-    }
-    .temoignageGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .temoignageContent {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .chiffresGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 80%;
- 
-    }
-    .chiffresFlex {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #chiffres p {
-        font-size: 1em;
-    }
-    /*Contact*/
-    form {
-        width: 80%;
-    }
-    .formContainer {
-        display: grid;
-        grid-template-areas:    "name name"
-                                "mail mail"
-                                "city city"
-                                "message message"
-                                "message message"
-                                "message message";
-    } 
-    .formName {
-        padding-right: 0;
-    }
-    .formMail {
-        padding-left: 0;
-    }
-    input {
-        font-size: 0.8em;
-    }
-    textarea {
-        font-size: 0.8em;
-    }
-    /*Footer*/
-    .footerBox {
-        width: 150px;
-        border-radius: 0;
-        height: 100%;
-        background-color: #262021;
-    }
-    .credits {
-        font-size: 0.5em;
-    }
-    .socialCont {
-        height: 12px;
-    }
-    .copyright p {
-        font-size: 0.5em;
-    }
-    h4 {
-        padding-top: 0;
-    }
-    .footerSocial {
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
+    
