@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style1.css" rel="stylesheet">
+    <title>SPY4U</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@300&display=swap"
         rel="stylesheet">
@@ -16,9 +17,8 @@
 </head>
 
 <body>
-
-    <!--navbar-->
-
+<!--Header---------------------------------------->
+<header>
     <nav class="navbar  navbar-fixed-top navbar-expand-lg navbar-light" id="navBar">
         <a class="navbar-brand" href="#"></a>
         <img src="assets/img/LOGOBLANC.png" id=whiteLogo>
@@ -27,11 +27,11 @@
             <i class="fas fa-bars" id="orangeColor"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav ml-md-auto my-2 my-lg-0 navbar-nav" style="max-height: 100px;">
+            <ul class="navbar-nav ml-md-auto my-2 my-lg-0 navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#">PRESENTATION</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" Wrole="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         DOMAINES D'INTERVENTION
@@ -39,19 +39,20 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="indexpageadultère.html">ADULTERE/INFIDELITE</a>
                         <a class="dropdown-item" href="recherchedepersonne.html">RECHERCHE DE PERSONNE</a>
-                        <a class="dropdown-item" href="#">VOL EN ENTREPRISE</a>
+                        <a class="dropdown-item" href="page_vol_en_entreprise.html">VOL EN ENTREPRISE</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#davidLogan">QUI SUIS-JE</a>
                 </li>
-                <a class="nav-link text-white" href="#">AVIS CLIENT</a>
+                <a class="nav-link text-white" href="#avis">AVIS CLIENT</a>
                 </li>
                 <a class="nav-link text-white" href="#">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
+</header>
 
     <!--Accueil--------------------------------------->
 
@@ -88,7 +89,7 @@
                     <div class="contentWithTitle">
                         <div class="row d-flex "></div>
                         <div class="col-12 rounded">
-                            <h3>PROFESSIONNEL AGRÉÉ</h3>
+                            <h3 class="dis">PROFESSIONNEL AGRÉÉ</h3>
                             <p><strong>Je suis David Logan, détective à votre service, autorisé et agréé par le
                                     CNAPS</strong></p>
                             <div class="btn-group-toggle" data-toggle="buttons">
@@ -109,7 +110,7 @@
                     <div class="contentWithoutTitle">
                         <div class="row d-flex ">
                             <div class="col-10 offset-2">
-                                <h3>DISPONIBILITÉ & RÉACTIVITÉ</h3>
+                                <h3 class="dis">DISPONIBILITÉ & RÉACTIVITÉ</h3>
                                 <p><strong>
                                         Toute demande est traitée rapidement et je reste
                                         disponible durant la réalisation de la mission
@@ -121,7 +122,7 @@
             </div>
 
             <!--LOGOPIED-->
-            <div class="logo bg-light text-center"> <img src="assets/img/LOGO.png" alt="" height="70em" class="mt-4">
+            <div class="logo bg-light text-center mb-3"> <img src="assets/img/LOGO.png" alt="" height="70em" class="mt-4">
             </div>
 
 
@@ -138,7 +139,7 @@
                             <ul>
                                 <li class="list-unstyled"><a class="text-white" href="indexpageadultère.html">ADULTÈRE / INFIDÉLITÉ</a></li>
                                 <li class="list-unstyled"><a class="text-white" href="recherchedepersonne.html">RECHERCHE DE PERSONNE</a></li>
-                                <li class="list-unstyled"><a class="text-white" href="#">VOL EN ENTREPRISE</a></li>
+                                <li class="list-unstyled"><a class="text-white" href="page_vol_en_entreprise.html">VOL EN ENTREPRISE</a></li>
                             </ul>
                         </div>
                     </div>
@@ -146,8 +147,73 @@
                 <div class="logo bg-light text-center"> <img src="assets/img/LOGO.png" alt="" height="70em"
                         class="mt-4">
                 </div>
+            
 
             </main>
+            
+            
+                <!-- Début de partie "Qui suis-je ? "-->
+                <main>
+                    <div class="container-fluid d-flex flex-column" id="davidLogan">
+                        <h2 class="text-center">QUI SUIS-JE</h2>
+                        <div class="row  text-center h-100 align-self-center align-content-center">
+                            <div class="col-12 col-lg-3 offset-lg-9">
+                                <p>David LOGAN<br>
+                                    <br>
+                                    Je suis <span font-italic>David Logan</span>, investigateur privé. Véritable passionné de
+                                    l'enquête, j'exerce cette
+                                    activité depuis la fin de mon parcours universitaire dans le domaine du
+                                    droit avec la spécialité:<br>
+                                    <span id=orangeColor>"agents de recherches privées".</span><br>
+                                    Installé à Paris dans le 17ème arrondissement depuis douze ans, mon agence SPY4U est spécialisé
+                                    dans la recherche de personnes, le vol industriel, la recherche de preuves et de témoignages.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="logo text-center"> <img src="assets/img/LOGO.png" alt="" height="70em" class="mt-4">
+                    </div>
+
+                    <!-- fin de qui sis je -->
+
+                    <div class="row justify-content-around">
+                        <div class="col-lg-4">
+                            <div class="card" style="height:25em;">
+                                <div class="card-body  text-center">
+                                    <h3 class="titleAvis">TEMOIGNAGES</h3>
+                                    <p class="card-Title">Ce que mes clients pensent de moi</p>
+                                    <p class="card-avis"><span id=avis>"Professionnel et sérieux ! Je recommande
+                                            vivement."</span></p>
+                                    <p class="custommerName">Jessica Huchon</p>
+                                    <p class="card-avis">
+                                        <span id=avis>"Professionnel et précis dans ses investigations ! Merci ! "</span>
+                                    </p>
+                                    <p class="custommerName">Sebastien Coenon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="height:25em;">
+                                <div class="card-body text-center">
+                                    <h3 class="titleAvis">CHIFFRES</h3>
+                                    <p class="card-avis"><span id=number>860+
+                                        </span></p>
+                                    <p class="card-Title">Nombres d'enquêtes</p>
+                                    <p class="card-avis"><span id=number>808+
+                                        </span></p>
+                                    <p class="card-Title">Affaires résolues</p>
+                                    <p class="card-avis"><span id=number>750+
+                                        </span></p>
+                                    <p class="card-Title">Prix moyen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo text-center"> <img src="assets/img/LOGO.png" alt="" height="70em" class="mt-4">
+                    </div>
+            
+                    <!-- Fin de partie "Avis "-->
 
             <!-- contact -->
 
@@ -183,13 +249,6 @@
                     <div class="form-group col-md-6 col-12">
                         <label for="inputCity"></label>
                         <input type="text" class="form-control" placeholder="Ville">
-                    </div>
-                    <div class="form-group col-md-6 col-12">
-                        <label for="inputState"></label>
-                        <select id="inputState" class="form-control">
-                            <option selected>Choisir...</option>
-                            <option>...</option>
-                        </select>
                     </div>
                 </div>
                 <div class="form-row">
@@ -243,7 +302,6 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
                 crossorigin="anonymous"></script>
-
 
 </body>
 
